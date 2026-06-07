@@ -1,0 +1,10 @@
+{
+    "spark_application_id": "spark-f3ea6977cea94377913391c6bea03739",
+    "student_id": "2122303",
+    "question": "Q2_Alt",
+    "api": "DataFrame_Native_Alt",
+    "format_input": "csv",
+    "custom_year": 2015,
+    "execution_time_seconds": 38.117900133132935,
+    "output_data_path": "hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/marpolymerou/project2026/results/q2_native_alt_csv_output"
+}

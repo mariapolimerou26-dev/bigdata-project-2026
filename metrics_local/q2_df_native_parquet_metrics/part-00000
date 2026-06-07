@@ -1,0 +1,16 @@
+{
+    "spark_application_id": "spark-5c4f650deff54e1f958251aa20ab1663",
+    "student_id": "2122303",
+    "question": "Q2",
+    "api": "DataFrame_Native",
+    "format_input": "parquet",
+    "custom_year": 2015,
+    "custom_hours": [
+        6,
+        7,
+        8,
+        9
+    ],
+    "execution_time_seconds": 54.50727033615112,
+    "output_data_path": "hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/marpolymerou/project2026/results/q2_df_native_parquet_output"
+}

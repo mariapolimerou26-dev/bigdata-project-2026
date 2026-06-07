@@ -1,0 +1,88 @@
+26/06/05 22:40:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/06/05 22:40:48 INFO SparkContext: Running Spark version 3.5.8
+26/06/05 22:40:48 INFO SparkContext: OS info Linux, 6.12.63+deb13-amd64, amd64
+26/06/05 22:40:48 INFO SparkContext: Java version 11.0.31
+26/06/05 22:40:48 INFO ResourceUtils: ==============================================================
+26/06/05 22:40:48 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/06/05 22:40:48 INFO ResourceUtils: ==============================================================
+26/06/05 22:40:48 INFO SparkContext: Submitted application: taxi-q3-df-maria
+26/06/05 22:40:48 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/06/05 22:40:48 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+26/06/05 22:40:48 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/06/05 22:40:48 INFO SecurityManager: Changing view acls to: spark,marpolymerou
+26/06/05 22:40:48 INFO SecurityManager: Changing modify acls to: spark,marpolymerou
+26/06/05 22:40:48 INFO SecurityManager: Changing view acls groups to: 
+26/06/05 22:40:48 INFO SecurityManager: Changing modify acls groups to: 
+26/06/05 22:40:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, marpolymerou; groups with view permissions: EMPTY; users with modify permissions: spark, marpolymerou; groups with modify permissions: EMPTY
+26/06/05 22:40:48 INFO Utils: Successfully started service 'sparkDriver' on port 7078.
+26/06/05 22:40:48 INFO SparkEnv: Registering MapOutputTracker
+26/06/05 22:40:48 INFO SparkEnv: Registering BlockManagerMaster
+26/06/05 22:40:48 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/06/05 22:40:48 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/06/05 22:40:48 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/06/05 22:40:48 INFO DiskBlockManager: Created local directory at /var/data/spark-43603fd9-a246-404c-9b6b-4b839e1a39c8/blockmgr-4da57a77-67f6-43e8-8dce-c3e44d4e8fbc
+26/06/05 22:40:48 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+26/06/05 22:40:48 INFO SparkEnv: Registering OutputCommitCoordinator
+26/06/05 22:40:49 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/06/05 22:40:49 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/06/05 22:40:49 INFO SparkKubernetesClientFactory: Auto-configuring K8S client using current context from users K8S config file
+26/06/05 22:40:50 INFO ExecutorPodsAllocator: Going to request 1 executors from Kubernetes for ResourceProfile Id: 0, target: 1, known: 0, sharedSlotFromPendingPods: 2147483647.
+26/06/05 22:40:50 INFO ExecutorPodsAllocator: Found 0 reusable PVCs from 0 PVCs
+26/06/05 22:40:50 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 7079.
+26/06/05 22:40:50 INFO NettyBlockTransferService: Server created on taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc 10.233.83.161:7079
+26/06/05 22:40:50 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/06/05 22:40:50 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:40:51 INFO BlockManagerMasterEndpoint: Registering block manager taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc:7079 with 413.9 MiB RAM, BlockManagerId(driver, taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:40:51 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:40:51 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:40:51 INFO BasicExecutorFeatureStep: Decommissioning not enabled, skipping shutdown script
+26/06/05 22:40:51 INFO SingleEventLogFileWriter: Logging events to hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/marpolymerou/logs/spark-42c58c1c342a4815b3dfbc6b843eea85.inprogress
+26/06/05 22:40:56 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: No executor found for 10.233.83.215:36730
+26/06/05 22:40:56 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.233.83.215:36740) with ID 1,  ResourceProfileId 0
+26/06/05 22:40:56 INFO KubernetesClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+26/06/05 22:40:56 INFO BlockManagerMasterEndpoint: Registering block manager 10.233.83.215:34157 with 413.9 MiB RAM, BlockManagerId(1, 10.233.83.215, 34157, None)
+26/06/05 22:40:56 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+26/06/05 22:40:56 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+26/06/05 22:40:58 INFO InMemoryFileIndex: It took 430 ms to list leaf files for 1 paths.
+26/06/05 22:40:58 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+26/06/05 22:40:58 INFO DAGScheduler: Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+26/06/05 22:40:58 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+26/06/05 22:40:58 INFO DAGScheduler: Parents of final stage: List()
+26/06/05 22:40:58 INFO DAGScheduler: Missing parents: List()
+26/06/05 22:40:58 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+26/06/05 22:40:58 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 105.5 KiB, free 413.8 MiB)
+26/06/05 22:40:58 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 38.1 KiB, free 413.8 MiB)
+26/06/05 22:40:58 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc:7079 (size: 38.1 KiB, free: 413.9 MiB)
+26/06/05 22:40:58 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1611
+26/06/05 22:40:58 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+26/06/05 22:40:58 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+26/06/05 22:40:58 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.233.83.215, executor 1, partition 0, PROCESS_LOCAL, 9309 bytes) 
+26/06/05 22:40:59 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.233.83.215:34157 (size: 38.1 KiB, free: 413.9 MiB)
+26/06/05 22:41:00 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1409 ms on 10.233.83.215 (executor 1) (1/1)
+26/06/05 22:41:00 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+26/06/05 22:41:00 INFO DAGScheduler: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 1.554 s
+26/06/05 22:41:00 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+26/06/05 22:41:00 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+26/06/05 22:41:00 INFO DAGScheduler: Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 1.625923 s
+26/06/05 22:41:00 INFO BlockManagerInfo: Removed broadcast_0_piece0 on taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc:7079 in memory (size: 38.1 KiB, free: 413.9 MiB)
+26/06/05 22:41:00 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.233.83.215:34157 in memory (size: 38.1 KiB, free: 413.9 MiB)
+Spark Application ID: spark-42c58c1c342a4815b3dfbc6b843eea85
+Traceback (most recent call last):
+  File "/tmp/spark-a2239080-a4a0-441b-807c-13bb95d402a8/q3_df.py", line 45, in <module>
+    f.write(df_result._jdf.queryExecution().toString())
+NameError: name 'df_result' is not defined
+26/06/05 22:41:01 INFO SparkContext: SparkContext is stopping with exitCode 0.
+26/06/05 22:41:01 INFO SparkUI: Stopped Spark web UI at http://taxi-q3-df-maria-fe73e49e99f1b915-driver-svc.marpolymerou-priv.svc:4040
+26/06/05 22:41:01 INFO KubernetesClusterSchedulerBackend: Shutting down all executors
+26/06/05 22:41:01 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Asking each executor to shut down
+26/06/05 22:41:01 WARN ExecutorPodsWatchSnapshotSource: Kubernetes client has been closed.
+26/06/05 22:41:03 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+26/06/05 22:41:03 INFO MemoryStore: MemoryStore cleared
+26/06/05 22:41:03 INFO BlockManager: BlockManager stopped
+26/06/05 22:41:03 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/06/05 22:41:03 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/06/05 22:41:03 INFO SparkContext: Successfully stopped SparkContext
+26/06/05 22:41:03 INFO ShutdownHookManager: Shutdown hook called
+26/06/05 22:41:03 INFO ShutdownHookManager: Deleting directory /var/data/spark-43603fd9-a246-404c-9b6b-4b839e1a39c8/spark-8fe3ef3b-97f6-4427-ae45-46188d7100fb
+26/06/05 22:41:03 INFO ShutdownHookManager: Deleting directory /tmp/spark-a2239080-a4a0-441b-807c-13bb95d402a8
+26/06/05 22:41:03 INFO ShutdownHookManager: Deleting directory /var/data/spark-43603fd9-a246-404c-9b6b-4b839e1a39c8/spark-8fe3ef3b-97f6-4427-ae45-46188d7100fb/pyspark-915f74e1-64df-450a-a12c-e5842ac3699c

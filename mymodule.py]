@@ -1,0 +1,41 @@
+# mymodule.py
+# Αυτό το αρχείο περιέχει ΜΟΝΟ τις συναρτήσεις, απομονωμένες από το SparkSession
+
+def process_csv_line(line):
+    if line.startswith("VendorID") or line.startswith('"VendorID'):
+        return None
+        
+    parts = line.split(",")
+    try:
+        pickup_str = parts[1].replace('"', '').replace("'", "")
+        dropoff_str = parts[2].replace('"', '').replace("'", "")
+        distance = float(parts[4])
+        total_amt = float(parts[16])
+
+        year = int(pickup_str[0:4])
+        day = int(pickup_str[8:10])
+        hour = int(pickup_str[11:13])
+
+        # Οι δικές σου τιμές (h=7, L=4, d=2) -> Ώρες 7-10, Ημέρες 2-4, Έτος 2024
+        if year == 2024 and (2 <= day <= 4) and (7 <= hour <= 10):
+            
+            p_min = int(pickup_str[11:13]) * 60.0 + int(pickup_str[14:16]) + float(pickup_str[17:19]) / 60.0
+            d_min = int(dropoff_str[11:13]) * 60.0 + int(dropoff_str[14:16]) + float(dropoff_str[17:19]) / 60.0
+            
+            if int(dropoff_str[8:10]) > day:
+                d_min += (int(dropoff_str[8:10]) - day) * 1440.0
+                
+            duration = d_min - p_min
+            if duration >= 0:
+                return (hour, (1, duration, total_amt, distance))
+    except:
+        return None
+    return None
+
+def aggregate_metrics(x, y):
+    return (
+        x[0] + y[0], # trips
+        x[1] + y[1], # duration
+        x[2] + y[2], # total_amount
+        x[3] + y[3]  # trip_distance
+    )

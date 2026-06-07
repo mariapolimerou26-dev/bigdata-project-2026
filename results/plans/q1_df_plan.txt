@@ -1,0 +1,267 @@
+26/06/05 22:15:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/06/05 22:15:11 INFO SparkContext: Running Spark version 3.5.8
+26/06/05 22:15:11 INFO SparkContext: OS info Linux, 6.12.63+deb13-amd64, amd64
+26/06/05 22:15:11 INFO SparkContext: Java version 11.0.31
+26/06/05 22:15:11 INFO ResourceUtils: ==============================================================
+26/06/05 22:15:11 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/06/05 22:15:11 INFO ResourceUtils: ==============================================================
+26/06/05 22:15:11 INFO SparkContext: Submitted application: taxi-q1-dataframe-maria
+26/06/05 22:15:11 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/06/05 22:15:11 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+26/06/05 22:15:11 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/06/05 22:15:11 INFO SecurityManager: Changing view acls to: spark,marpolymerou
+26/06/05 22:15:11 INFO SecurityManager: Changing modify acls to: spark,marpolymerou
+26/06/05 22:15:11 INFO SecurityManager: Changing view acls groups to: 
+26/06/05 22:15:11 INFO SecurityManager: Changing modify acls groups to: 
+26/06/05 22:15:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, marpolymerou; groups with view permissions: EMPTY; users with modify permissions: spark, marpolymerou; groups with modify permissions: EMPTY
+26/06/05 22:15:11 INFO Utils: Successfully started service 'sparkDriver' on port 7078.
+26/06/05 22:15:11 INFO SparkEnv: Registering MapOutputTracker
+26/06/05 22:15:11 INFO SparkEnv: Registering BlockManagerMaster
+26/06/05 22:15:11 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/06/05 22:15:11 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/06/05 22:15:11 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/06/05 22:15:11 INFO DiskBlockManager: Created local directory at /var/data/spark-c4f56f7f-5594-4407-934e-6f90448beb53/blockmgr-67974581-4f02-4e17-a5b9-4e021f03f80b
+26/06/05 22:15:11 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+26/06/05 22:15:11 INFO SparkEnv: Registering OutputCommitCoordinator
+26/06/05 22:15:11 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/06/05 22:15:11 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/06/05 22:15:11 INFO SparkKubernetesClientFactory: Auto-configuring K8S client using current context from users K8S config file
+26/06/05 22:15:13 INFO ExecutorPodsAllocator: Going to request 1 executors from Kubernetes for ResourceProfile Id: 0, target: 1, known: 0, sharedSlotFromPendingPods: 2147483647.
+26/06/05 22:15:13 INFO ExecutorPodsAllocator: Found 0 reusable PVCs from 0 PVCs
+26/06/05 22:15:13 INFO BasicExecutorFeatureStep: Decommissioning not enabled, skipping shutdown script
+26/06/05 22:15:13 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 7079.
+26/06/05 22:15:13 INFO NettyBlockTransferService: Server created on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc 10.233.83.159:7079
+26/06/05 22:15:13 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/06/05 22:15:13 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:15:13 INFO BlockManagerMasterEndpoint: Registering block manager taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 with 413.9 MiB RAM, BlockManagerId(driver, taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:15:13 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:15:13 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc, 7079, None)
+26/06/05 22:15:13 INFO SingleEventLogFileWriter: Logging events to hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/marpolymerou/logs/spark-475ba5d2a0564c18b62fb62b31676879.inprogress
+26/06/05 22:15:17 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: No executor found for 10.233.83.214:47314
+26/06/05 22:15:18 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.233.83.214:47330) with ID 1,  ResourceProfileId 0
+26/06/05 22:15:18 INFO KubernetesClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+26/06/05 22:15:18 INFO BlockManagerMasterEndpoint: Registering block manager 10.233.83.214:33705 with 413.9 MiB RAM, BlockManagerId(1, 10.233.83.214, 33705, None)
+=== Ανάγνωση δεδομένων Parquet 2024... ===
+26/06/05 22:15:18 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+26/06/05 22:15:18 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+26/06/05 22:15:19 INFO InMemoryFileIndex: It took 430 ms to list leaf files for 1 paths.
+26/06/05 22:15:20 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+26/06/05 22:15:20 INFO DAGScheduler: Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+26/06/05 22:15:20 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+26/06/05 22:15:20 INFO DAGScheduler: Parents of final stage: List()
+26/06/05 22:15:20 INFO DAGScheduler: Missing parents: List()
+26/06/05 22:15:20 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+26/06/05 22:15:20 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 105.5 KiB, free 413.8 MiB)
+26/06/05 22:15:20 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 38.2 KiB, free 413.8 MiB)
+26/06/05 22:15:20 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 (size: 38.2 KiB, free: 413.9 MiB)
+26/06/05 22:15:20 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1611
+26/06/05 22:15:20 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+26/06/05 22:15:20 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+26/06/05 22:15:20 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.233.83.214, executor 1, partition 0, PROCESS_LOCAL, 9309 bytes) 
+26/06/05 22:15:20 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.233.83.214:33705 (size: 38.2 KiB, free: 413.9 MiB)
+26/06/05 22:15:22 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1595 ms on 10.233.83.214 (executor 1) (1/1)
+26/06/05 22:15:22 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+26/06/05 22:15:22 INFO DAGScheduler: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 1.737 s
+26/06/05 22:15:22 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+26/06/05 22:15:22 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+26/06/05 22:15:22 INFO DAGScheduler: Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 1.804686 s
+26/06/05 22:15:22 INFO BlockManagerInfo: Removed broadcast_0_piece0 on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 in memory (size: 38.2 KiB, free: 413.9 MiB)
+26/06/05 22:15:22 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.233.83.214:33705 in memory (size: 38.2 KiB, free: 413.9 MiB)
+Spark Application ID: spark-475ba5d2a0564c18b62fb62b31676879
+26/06/05 22:15:23 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+26/06/05 22:15:23 INFO DataSourceStrategy: Pruning directories with: 
+26/06/05 22:15:23 INFO FileSourceStrategy: Pushed Filters: IsNotNull(duration_minutes),IsNotNull(trip_distance),IsNotNull(total_amount),IsNotNull(pickup_hour),IsNotNull(dropoff_ts),GreaterThan(duration_minutes,0.0),GreaterThan(trip_distance,0.0),GreaterThan(total_amount,0.0),GreaterThanOrEqual(pickup_hour,2),LessThanOrEqual(pickup_hour,17)
+26/06/05 22:15:23 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(duration_minutes#23),isnotnull(trip_distance#4),isnotnull(total_amount#16),isnotnull(pickup_hour#22),isnotnull(dropoff_ts#20),(duration_minutes#23 > 0.0),(trip_distance#4 > 0.0),(total_amount#16 > 0.0),(pickup_hour#22 >= 2),(pickup_hour#22 <= 17),dayofweek(cast(pickup_ts#19 as date)) IN (5,6,7,1)
+Catalyst plan saved to: results/plans/q1_df_plan.txt
+26/06/05 22:15:23 INFO DataSourceStrategy: Pruning directories with: 
+26/06/05 22:15:23 INFO FileSourceStrategy: Pushed Filters: IsNotNull(duration_minutes),IsNotNull(trip_distance),IsNotNull(total_amount),IsNotNull(pickup_hour),IsNotNull(dropoff_ts),GreaterThan(duration_minutes,0.0),GreaterThan(trip_distance,0.0),GreaterThan(total_amount,0.0),GreaterThanOrEqual(pickup_hour,2),LessThanOrEqual(pickup_hour,17)
+26/06/05 22:15:23 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(duration_minutes#23),isnotnull(trip_distance#4),isnotnull(total_amount#16),isnotnull(pickup_hour#22),isnotnull(dropoff_ts#20),(duration_minutes#23 > 0.0),(trip_distance#4 > 0.0),(total_amount#16 > 0.0),(pickup_hour#22 >= 2),(pickup_hour#22 <= 17),dayofweek(cast(pickup_ts#19 as date)) IN (5,6,7,1)
+26/06/05 22:15:24 INFO CodeGenerator: Code generated in 324.092508 ms
+26/06/05 22:15:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 205.5 KiB, free 413.7 MiB)
+26/06/05 22:15:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 36.2 KiB, free 413.7 MiB)
+26/06/05 22:15:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 (size: 36.2 KiB, free: 413.9 MiB)
+26/06/05 22:15:24 INFO SparkContext: Created broadcast 1 from csv at NativeMethodAccessorImpl.java:0
+26/06/05 22:15:24 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+26/06/05 22:15:24 INFO DAGScheduler: Registering RDD 5 (csv at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+26/06/05 22:15:24 INFO DAGScheduler: Got map stage job 1 (csv at NativeMethodAccessorImpl.java:0) with 32 output partitions
+26/06/05 22:15:24 INFO DAGScheduler: Final stage: ShuffleMapStage 1 (csv at NativeMethodAccessorImpl.java:0)
+26/06/05 22:15:24 INFO DAGScheduler: Parents of final stage: List()
+26/06/05 22:15:24 INFO DAGScheduler: Missing parents: List()
+26/06/05 22:15:24 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[5] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+26/06/05 22:15:24 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 55.0 KiB, free 413.6 MiB)
+26/06/05 22:15:24 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 22.7 KiB, free 413.6 MiB)
+26/06/05 22:15:24 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 (size: 22.7 KiB, free: 413.9 MiB)
+26/06/05 22:15:24 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1611
+26/06/05 22:15:24 INFO DAGScheduler: Submitting 32 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[5] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+26/06/05 22:15:24 INFO TaskSchedulerImpl: Adding task set 1.0 with 32 tasks resource profile 0
+26/06/05 22:15:24 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (10.233.83.214, executor 1, partition 0, ANY, 13035 bytes) 
+26/06/05 22:15:24 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.233.83.214:33705 (size: 22.7 KiB, free: 413.9 MiB)
+26/06/05 22:15:25 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.233.83.214:33705 (size: 36.2 KiB, free: 413.9 MiB)
+26/06/05 22:15:39 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (10.233.83.214, executor 1, partition 1, ANY, 13541 bytes) 
+26/06/05 22:15:39 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 15203 ms on 10.233.83.214 (executor 1) (1/32)
+26/06/05 22:15:57 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (10.233.83.214, executor 1, partition 2, ANY, 13837 bytes) 
+26/06/05 22:15:57 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 17424 ms on 10.233.83.214 (executor 1) (2/32)
+26/06/05 22:16:10 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (10.233.83.214, executor 1, partition 3, ANY, 13849 bytes) 
+26/06/05 22:16:10 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 13445 ms on 10.233.83.214 (executor 1) (3/32)
+26/06/05 22:16:23 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (10.233.83.214, executor 1, partition 4, ANY, 13836 bytes) 
+26/06/05 22:16:23 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 12828 ms on 10.233.83.214 (executor 1) (4/32)
+26/06/05 22:16:35 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (10.233.83.214, executor 1, partition 5, ANY, 13813 bytes) 
+26/06/05 22:16:35 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 11696 ms on 10.233.83.214 (executor 1) (5/32)
+26/06/05 22:16:49 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (10.233.83.214, executor 1, partition 6, ANY, 14084 bytes) 
+26/06/05 22:16:49 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 14071 ms on 10.233.83.214 (executor 1) (6/32)
+26/06/05 22:17:04 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (10.233.83.214, executor 1, partition 7, ANY, 14088 bytes) 
+26/06/05 22:17:04 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 14985 ms on 10.233.83.214 (executor 1) (7/32)
+26/06/05 22:17:17 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 9) (10.233.83.214, executor 1, partition 8, ANY, 14059 bytes) 
+26/06/05 22:17:17 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 13611 ms on 10.233.83.214 (executor 1) (8/32)
+26/06/05 22:17:31 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 10) (10.233.83.214, executor 1, partition 9, ANY, 14102 bytes) 
+26/06/05 22:17:31 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 9) in 13125 ms on 10.233.83.214 (executor 1) (9/32)
+26/06/05 22:17:43 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 11) (10.233.83.214, executor 1, partition 10, ANY, 14081 bytes) 
+26/06/05 22:17:43 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 10) in 11893 ms on 10.233.83.214 (executor 1) (10/32)
+26/06/05 22:17:55 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 12) (10.233.83.214, executor 1, partition 11, ANY, 14063 bytes) 
+26/06/05 22:17:55 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 11) in 12862 ms on 10.233.83.214 (executor 1) (11/32)
+26/06/05 22:18:07 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 13) (10.233.83.214, executor 1, partition 12, ANY, 14150 bytes) 
+26/06/05 22:18:07 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 12) in 11344 ms on 10.233.83.214 (executor 1) (12/32)
+26/06/05 22:18:21 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 14) (10.233.83.214, executor 1, partition 13, ANY, 14363 bytes) 
+26/06/05 22:18:21 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 13) in 14427 ms on 10.233.83.214 (executor 1) (13/32)
+26/06/05 22:18:35 INFO TaskSetManager: Starting task 14.0 in stage 1.0 (TID 15) (10.233.83.214, executor 1, partition 14, ANY, 14425 bytes) 
+26/06/05 22:18:35 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 14) in 13405 ms on 10.233.83.214 (executor 1) (14/32)
+26/06/05 22:18:46 INFO TaskSetManager: Starting task 15.0 in stage 1.0 (TID 16) (10.233.83.214, executor 1, partition 15, ANY, 14301 bytes) 
+26/06/05 22:18:46 INFO TaskSetManager: Finished task 14.0 in stage 1.0 (TID 15) in 11775 ms on 10.233.83.214 (executor 1) (15/32)
+26/06/05 22:18:58 INFO TaskSetManager: Starting task 16.0 in stage 1.0 (TID 17) (10.233.83.214, executor 1, partition 16, ANY, 14419 bytes) 
+26/06/05 22:18:58 INFO TaskSetManager: Finished task 15.0 in stage 1.0 (TID 16) in 11601 ms on 10.233.83.214 (executor 1) (16/32)
+26/06/05 22:19:10 INFO TaskSetManager: Starting task 17.0 in stage 1.0 (TID 18) (10.233.83.214, executor 1, partition 17, ANY, 14632 bytes) 
+26/06/05 22:19:10 INFO TaskSetManager: Finished task 16.0 in stage 1.0 (TID 17) in 11639 ms on 10.233.83.214 (executor 1) (17/32)
+26/06/05 22:19:24 INFO TaskSetManager: Starting task 18.0 in stage 1.0 (TID 19) (10.233.83.214, executor 1, partition 18, ANY, 14633 bytes) 
+26/06/05 22:19:24 INFO TaskSetManager: Finished task 17.0 in stage 1.0 (TID 18) in 14801 ms on 10.233.83.214 (executor 1) (18/32)
+26/06/05 22:19:36 INFO TaskSetManager: Starting task 19.0 in stage 1.0 (TID 20) (10.233.83.214, executor 1, partition 19, ANY, 14903 bytes) 
+26/06/05 22:19:36 INFO TaskSetManager: Finished task 18.0 in stage 1.0 (TID 19) in 11775 ms on 10.233.83.214 (executor 1) (19/32)
+26/06/05 22:19:48 INFO TaskSetManager: Starting task 20.0 in stage 1.0 (TID 21) (10.233.83.214, executor 1, partition 20, ANY, 15146 bytes) 
+26/06/05 22:19:48 INFO TaskSetManager: Finished task 19.0 in stage 1.0 (TID 20) in 12330 ms on 10.233.83.214 (executor 1) (20/32)
+26/06/05 22:19:58 INFO TaskSetManager: Starting task 21.0 in stage 1.0 (TID 22) (10.233.83.214, executor 1, partition 21, ANY, 15938 bytes) 
+26/06/05 22:19:58 INFO TaskSetManager: Finished task 20.0 in stage 1.0 (TID 21) in 9986 ms on 10.233.83.214 (executor 1) (21/32)
+26/06/05 22:20:09 INFO TaskSetManager: Starting task 22.0 in stage 1.0 (TID 23) (10.233.83.214, executor 1, partition 22, ANY, 16710 bytes) 
+26/06/05 22:20:09 INFO TaskSetManager: Finished task 21.0 in stage 1.0 (TID 22) in 10427 ms on 10.233.83.214 (executor 1) (22/32)
+26/06/05 22:20:20 INFO TaskSetManager: Starting task 23.0 in stage 1.0 (TID 24) (10.233.83.214, executor 1, partition 23, ANY, 16662 bytes) 
+26/06/05 22:20:20 INFO TaskSetManager: Finished task 22.0 in stage 1.0 (TID 23) in 10726 ms on 10.233.83.214 (executor 1) (23/32)
+26/06/05 22:20:30 INFO TaskSetManager: Starting task 24.0 in stage 1.0 (TID 25) (10.233.83.214, executor 1, partition 24, ANY, 16988 bytes) 
+26/06/05 22:20:30 INFO TaskSetManager: Finished task 23.0 in stage 1.0 (TID 24) in 10386 ms on 10.233.83.214 (executor 1) (24/32)
+26/06/05 22:20:41 INFO TaskSetManager: Starting task 25.0 in stage 1.0 (TID 26) (10.233.83.214, executor 1, partition 25, ANY, 16995 bytes) 
+26/06/05 22:20:41 INFO TaskSetManager: Finished task 24.0 in stage 1.0 (TID 25) in 11123 ms on 10.233.83.214 (executor 1) (25/32)
+26/06/05 22:20:51 INFO TaskSetManager: Starting task 26.0 in stage 1.0 (TID 27) (10.233.83.214, executor 1, partition 26, ANY, 17270 bytes) 
+26/06/05 22:20:51 INFO TaskSetManager: Finished task 25.0 in stage 1.0 (TID 26) in 9750 ms on 10.233.83.214 (executor 1) (26/32)
+26/06/05 22:20:59 INFO TaskSetManager: Starting task 27.0 in stage 1.0 (TID 28) (10.233.83.214, executor 1, partition 27, ANY, 17249 bytes) 
+26/06/05 22:20:59 INFO TaskSetManager: Finished task 26.0 in stage 1.0 (TID 27) in 8504 ms on 10.233.83.214 (executor 1) (27/32)
+26/06/05 22:21:08 INFO TaskSetManager: Starting task 28.0 in stage 1.0 (TID 29) (10.233.83.214, executor 1, partition 28, ANY, 17500 bytes) 
+26/06/05 22:21:08 INFO TaskSetManager: Finished task 27.0 in stage 1.0 (TID 28) in 8448 ms on 10.233.83.214 (executor 1) (28/32)
+26/06/05 22:21:16 INFO TaskSetManager: Starting task 29.0 in stage 1.0 (TID 30) (10.233.83.214, executor 1, partition 29, ANY, 17821 bytes) 
+26/06/05 22:21:16 INFO TaskSetManager: Finished task 28.0 in stage 1.0 (TID 29) in 8191 ms on 10.233.83.214 (executor 1) (29/32)
+26/06/05 22:21:26 INFO TaskSetManager: Starting task 30.0 in stage 1.0 (TID 31) (10.233.83.214, executor 1, partition 30, ANY, 18080 bytes) 
+26/06/05 22:21:26 INFO TaskSetManager: Finished task 29.0 in stage 1.0 (TID 30) in 9737 ms on 10.233.83.214 (executor 1) (30/32)
+26/06/05 22:21:35 INFO TaskSetManager: Starting task 31.0 in stage 1.0 (TID 32) (10.233.83.214, executor 1, partition 31, ANY, 15402 bytes) 
+26/06/05 22:21:35 INFO TaskSetManager: Finished task 30.0 in stage 1.0 (TID 31) in 8833 ms on 10.233.83.214 (executor 1) (31/32)
+26/06/05 22:21:37 INFO TaskSetManager: Finished task 31.0 in stage 1.0 (TID 32) in 2112 ms on 10.233.83.214 (executor 1) (32/32)
+26/06/05 22:21:37 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+26/06/05 22:21:37 INFO DAGScheduler: ShuffleMapStage 1 (csv at NativeMethodAccessorImpl.java:0) finished in 372.444 s
+26/06/05 22:21:37 INFO DAGScheduler: looking for newly runnable stages
+26/06/05 22:21:37 INFO DAGScheduler: running: Set()
+26/06/05 22:21:37 INFO DAGScheduler: waiting: Set()
+26/06/05 22:21:37 INFO DAGScheduler: failed: Set()
+26/06/05 22:21:37 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+26/06/05 22:21:37 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+26/06/05 22:21:37 INFO BlockManagerInfo: Removed broadcast_2_piece0 on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 in memory (size: 22.7 KiB, free: 413.9 MiB)
+26/06/05 22:21:37 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.233.83.214:33705 in memory (size: 22.7 KiB, free: 413.9 MiB)
+26/06/05 22:21:37 INFO CodeGenerator: Code generated in 41.33001 ms
+26/06/05 22:21:37 INFO CodeGenerator: Code generated in 19.542641 ms
+26/06/05 22:21:37 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+26/06/05 22:21:37 INFO DAGScheduler: Got job 2 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+26/06/05 22:21:37 INFO DAGScheduler: Final stage: ResultStage 3 (csv at NativeMethodAccessorImpl.java:0)
+26/06/05 22:21:37 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+26/06/05 22:21:37 INFO DAGScheduler: Missing parents: List()
+26/06/05 22:21:37 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[10] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+26/06/05 22:21:37 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 57.8 KiB, free 413.6 MiB)
+26/06/05 22:21:37 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 25.4 KiB, free 413.6 MiB)
+26/06/05 22:21:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 (size: 25.4 KiB, free: 413.9 MiB)
+26/06/05 22:21:37 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1611
+26/06/05 22:21:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[10] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+26/06/05 22:21:37 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+26/06/05 22:21:37 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 33) (10.233.83.214, executor 1, partition 0, NODE_LOCAL, 9018 bytes) 
+26/06/05 22:21:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.233.83.214:33705 (size: 25.4 KiB, free: 413.9 MiB)
+26/06/05 22:21:37 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.233.83.214:47330
+26/06/05 22:21:37 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 33) in 387 ms on 10.233.83.214 (executor 1) (1/1)
+26/06/05 22:21:37 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+26/06/05 22:21:37 INFO DAGScheduler: ResultStage 3 (csv at NativeMethodAccessorImpl.java:0) finished in 0.399 s
+26/06/05 22:21:37 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+26/06/05 22:21:37 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+26/06/05 22:21:37 INFO DAGScheduler: Job 2 finished: csv at NativeMethodAccessorImpl.java:0, took 0.428875 s
+26/06/05 22:21:37 INFO DAGScheduler: Registering RDD 11 (csv at NativeMethodAccessorImpl.java:0) as input to shuffle 1
+26/06/05 22:21:37 INFO DAGScheduler: Got map stage job 3 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+26/06/05 22:21:37 INFO DAGScheduler: Final stage: ShuffleMapStage 5 (csv at NativeMethodAccessorImpl.java:0)
+26/06/05 22:21:37 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+26/06/05 22:21:37 INFO DAGScheduler: Missing parents: List()
+26/06/05 22:21:37 INFO DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[11] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+26/06/05 22:21:37 INFO BlockManagerInfo: Removed broadcast_3_piece0 on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 in memory (size: 25.4 KiB, free: 413.9 MiB)
+26/06/05 22:21:37 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 10.233.83.214:33705 in memory (size: 25.4 KiB, free: 413.9 MiB)
+26/06/05 22:21:37 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 72.9 KiB, free 413.6 MiB)
+26/06/05 22:21:37 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 30.5 KiB, free 413.6 MiB)
+26/06/05 22:21:37 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 (size: 30.5 KiB, free: 413.9 MiB)
+26/06/05 22:21:37 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1611
+26/06/05 22:21:37 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[11] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+26/06/05 22:21:37 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+26/06/05 22:21:37 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 34) (10.233.83.214, executor 1, partition 0, NODE_LOCAL, 9007 bytes) 
+26/06/05 22:21:37 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.233.83.214:33705 (size: 30.5 KiB, free: 413.9 MiB)
+26/06/05 22:21:38 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 34) in 176 ms on 10.233.83.214 (executor 1) (1/1)
+26/06/05 22:21:38 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+26/06/05 22:21:38 INFO DAGScheduler: ShuffleMapStage 5 (csv at NativeMethodAccessorImpl.java:0) finished in 0.207 s
+26/06/05 22:21:38 INFO DAGScheduler: looking for newly runnable stages
+26/06/05 22:21:38 INFO DAGScheduler: running: Set()
+26/06/05 22:21:38 INFO DAGScheduler: waiting: Set()
+26/06/05 22:21:38 INFO DAGScheduler: failed: Set()
+26/06/05 22:21:38 INFO ShufflePartitionsUtil: For shuffle(1), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+26/06/05 22:21:38 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+26/06/05 22:21:38 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+26/06/05 22:21:38 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+26/06/05 22:21:38 INFO CodeGenerator: Code generated in 13.030403 ms
+26/06/05 22:21:38 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+26/06/05 22:21:38 INFO DAGScheduler: Got job 4 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+26/06/05 22:21:38 INFO DAGScheduler: Final stage: ResultStage 8 (csv at NativeMethodAccessorImpl.java:0)
+26/06/05 22:21:38 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+26/06/05 22:21:38 INFO DAGScheduler: Missing parents: List()
+26/06/05 22:21:38 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[15] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+26/06/05 22:21:38 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 259.5 KiB, free 413.3 MiB)
+26/06/05 22:21:38 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 97.7 KiB, free 413.2 MiB)
+26/06/05 22:21:38 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 (size: 97.7 KiB, free: 413.8 MiB)
+26/06/05 22:21:38 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1611
+26/06/05 22:21:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[15] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+26/06/05 22:21:38 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks resource profile 0
+26/06/05 22:21:38 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 35) (10.233.83.214, executor 1, partition 0, NODE_LOCAL, 9294 bytes) 
+26/06/05 22:21:38 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.233.83.214:33705 (size: 97.7 KiB, free: 413.8 MiB)
+26/06/05 22:21:38 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 10.233.83.214:47330
+26/06/05 22:21:38 INFO BlockManagerInfo: Removed broadcast_4_piece0 on taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:7079 in memory (size: 30.5 KiB, free: 413.8 MiB)
+26/06/05 22:21:38 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 35) in 442 ms on 10.233.83.214 (executor 1) (1/1)
+26/06/05 22:21:38 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+26/06/05 22:21:38 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 10.233.83.214:33705 in memory (size: 30.5 KiB, free: 413.8 MiB)
+26/06/05 22:21:38 INFO DAGScheduler: ResultStage 8 (csv at NativeMethodAccessorImpl.java:0) finished in 0.484 s
+26/06/05 22:21:38 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+26/06/05 22:21:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 8: Stage finished
+26/06/05 22:21:38 INFO DAGScheduler: Job 4 finished: csv at NativeMethodAccessorImpl.java:0, took 0.490889 s
+26/06/05 22:21:38 INFO FileFormatWriter: Start to commit write Job 26044a96-c836-4469-9758-ad68e55ae51b.
+26/06/05 22:21:38 INFO FileFormatWriter: Write Job 26044a96-c836-4469-9758-ad68e55ae51b committed. Elapsed time: 46 ms.
+26/06/05 22:21:38 INFO FileFormatWriter: Finished processing stats for write job 26044a96-c836-4469-9758-ad68e55ae51b.
+=== Q1 DATAFRAME CSV SUCCESS ===
+Execution Time: 380.13762879371643 seconds
+Metrics saved to JSON successfully.
+26/06/05 22:21:38 INFO SparkContext: SparkContext is stopping with exitCode 0.
+26/06/05 22:21:38 INFO SparkUI: Stopped Spark web UI at http://taxi-q1-df-maria-ec28349e99da40be-driver-svc.marpolymerou-priv.svc:4040
+26/06/05 22:21:38 INFO KubernetesClusterSchedulerBackend: Shutting down all executors
+26/06/05 22:21:38 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Asking each executor to shut down
+26/06/05 22:21:38 WARN ExecutorPodsWatchSnapshotSource: Kubernetes client has been closed.
+26/06/05 22:21:39 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+26/06/05 22:21:39 INFO MemoryStore: MemoryStore cleared
+26/06/05 22:21:39 INFO BlockManager: BlockManager stopped
+26/06/05 22:21:39 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/06/05 22:21:39 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/06/05 22:21:39 INFO SparkContext: Successfully stopped SparkContext
+26/06/05 22:21:40 INFO ShutdownHookManager: Shutdown hook called
+26/06/05 22:21:40 INFO ShutdownHookManager: Deleting directory /var/data/spark-c4f56f7f-5594-4407-934e-6f90448beb53/spark-c068d56e-122d-47c2-8921-b419fa274249/pyspark-b532f0a0-feab-452e-bd52-056a3076b1e1
+26/06/05 22:21:40 INFO ShutdownHookManager: Deleting directory /tmp/spark-7d726b6e-cb7f-462a-9d3e-c5d5c1f8c3b4
+26/06/05 22:21:40 INFO ShutdownHookManager: Deleting directory /var/data/spark-c4f56f7f-5594-4407-934e-6f90448beb53/spark-c068d56e-122d-47c2-8921-b419fa274249

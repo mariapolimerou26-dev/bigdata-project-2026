@@ -1,0 +1,22 @@
+{
+    "spark_application_id": "spark-f43a2b56f68b4bc492d7fc152951da22",
+    "student_id": "2122303",
+    "question": "Q1",
+    "api": "DataFrame",
+    "format_input": "csv",
+    "custom_year": 2015,
+    "custom_hours": [
+        6,
+        7,
+        8,
+        9
+    ],
+    "custom_days": [
+        1,
+        2,
+        3
+    ],
+    "K_limit": 23,
+    "execution_time_seconds": 76.84230923652649,
+    "output_data_path": "hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/marpolymerou/project2026/results/q1_df_csv_output"
+}
